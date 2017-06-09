@@ -2,6 +2,10 @@
 A repo containing some useful security tools.
 
 ## Mobile
+### Pentesting
+* [MobSF/Mobile-Security-Framework-MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
+* [cSploit/android](https://github.com/cSploit/android)
+
 ### APK Decompilers
 * [google/android-classyshark](https://github.com/google/android-classyshark)
 
