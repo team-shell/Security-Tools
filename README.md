@@ -18,3 +18,7 @@ A repo containing some useful security tools.
 ### Cordova Secure Storage
 * [pradeep1991singh / cordova-plugin-secure-key-store](https://github.com/pradeep1991singh/cordova-plugin-secure-key-store)
 * [Crypho/cordova-plugin-secure-storage](https://github.com/Crypho/cordova-plugin-secure-storage)
+
+## OWASP
+### XSS Protection
+* [ESAPI/node-esapi](https://github.com/ESAPI/node-esapi)
