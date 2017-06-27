@@ -22,3 +22,4 @@ A repo containing some useful security tools.
 ## OWASP
 ### XSS Protection
 * [ESAPI/node-esapi](https://github.com/ESAPI/node-esapi)
+* [ecto/bleach](https://github.com/ecto/bleach)
