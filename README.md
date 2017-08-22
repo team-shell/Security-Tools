@@ -15,6 +15,9 @@ A repo containing some useful security tools.
 * `adb pull /data/app/com.google.android.youtube-1/base.apk` - pull one of those apps from the phone
 * `adb shell service list` - list of system services
 
+`adb backup -noapk com.google.android.youtube` - backup app data from a device
+`dd if=backup.ab bs=24 skip=1 | python -c "import zlib,sys;sys.stdout.write(zlib.decompress(sys.stdin.read()))" > backup.tar` - uncompress the Android Backup Format into .tar format
+
 ### APK Unpack/Uncompress
 You can use apktool to unpack and uncompress the files. 
 * `apktool d base.apk`
