@@ -9,10 +9,11 @@ A repo containing some useful security tools.
 ### Deliberately Vulnerable Applications
 * [OWASP/igoat](https://github.com/owasp/igoat)
 
-### Debug Bridge
+### Android Debug Bridge
 * `adb devices` - list of devices attached
 * `adb shell pm list packages -f` - lists all installed apps and their locations
 * `adb pull /data/app/com.google.android.youtube-1/base.apk` - pull one of those apps from the phone
+* `adb shell service list` - list of system services
 
 ### APK Unpack/Uncompress
 You can use apktool to unpack and uncompress the files. 
