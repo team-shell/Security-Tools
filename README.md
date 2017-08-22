@@ -21,6 +21,7 @@ A repo containing some useful security tools.
 ### APK Unpack/Uncompress
 You can use apktool to unpack and uncompress the files. 
 * `apktool d base.apk`
+* `unzip base.apk` - this will unzip a .apk file. With this tool you can see the META-INF folder
 
 ### Finding User ID
 * `id` - find the current users id
