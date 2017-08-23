@@ -33,6 +33,9 @@ Check certificate chain:
 * `dd if=backup.ab bs=24 skip=1 | python -c "import zlib,sys;sys.stdout.write(zlib.decompress(sys.stdin.read()))" > backup.tar` - uncompress the Android Backup Format into .tar format
 * `ps` - view running processes on the device with user id's
 * `cat /data/system/packages.xml` - view the permissions of all apps on the device
+* `cat /etc/permissions/platform.xml` - view the permission-to-group mappings (These are used to determine supplemental group IDs to set for the application)
+* `pm install or adb install` - install an app on the device
+
 
 ### APK Unpack/Uncompress
 You can use apktool to unpack and uncompress the files. 
