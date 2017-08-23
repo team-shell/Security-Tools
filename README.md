@@ -5,11 +5,11 @@ A repo containing some useful security tools.
 ### OpenSSL
 In the snippet below from a command line, the openssl tool's s_client command looks at Wikipedia's server certificate information. It specifies port 443 because that is the default for HTTPS. The command sends the output of openssl s_client to openssl x509, which formats information about certificates according to the X.509 standard. Specifically, the command asks for the subject, which contains the server name information, and the issuer, which identifies the CA.
 
-`openssl s_client -connect wikipedia.org:443 | openssl x509 -noout -subject -issuer`
+* `openssl s_client -connect wikipedia.org:443 | openssl x509 -noout -subject -issuer`
 
 Check certificate chain:
 
-`openssl s_client -connect wikipedia.com:443`
+* `openssl s_client -connect wikipedia.com:443`
 
 
 ## Mobile
@@ -31,6 +31,7 @@ Check certificate chain:
 
 * `adb backup -noapk com.google.android.youtube` - backup app data from a device
 * `dd if=backup.ab bs=24 skip=1 | python -c "import zlib,sys;sys.stdout.write(zlib.decompress(sys.stdin.read()))" > backup.tar` - uncompress the Android Backup Format into .tar format
+* `ps` - view running processes on the device with user id's
 
 ### APK Unpack/Uncompress
 You can use apktool to unpack and uncompress the files. 
