@@ -2,10 +2,15 @@
 A repo containing some useful security tools.
 
 ## Server
-### Check Certificate
+### OpenSSL
 In the snippet below from a command line, the openssl tool's s_client command looks at Wikipedia's server certificate information. It specifies port 443 because that is the default for HTTPS. The command sends the output of openssl s_client to openssl x509, which formats information about certificates according to the X.509 standard. Specifically, the command asks for the subject, which contains the server name information, and the issuer, which identifies the CA.
 
 `openssl s_client -connect wikipedia.org:443 | openssl x509 -noout -subject -issuer`
+
+Check certificate chain:
+
+`openssl s_client -connect wikipedia.com:443`
+
 
 ## Mobile
 ### Pentesting Tools
