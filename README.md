@@ -10,7 +10,9 @@ In the snippet below from a command line, the openssl tool's s_client command lo
 Get the public key of the certificate from a host:
 * `openssl s_client -connect google.com:443 | openssl x509 -pubkey -noout`
 
-You can get the SHA-256 pin for a public key by going to - https://www.ssllabs.com/ssltest/index.html
+You can get the SHA-256 pin for a public key by going to - https://www.ssllabs.com/ssltest/index.html or by using:
+
+`openssl s_client -servername www.example.com -connect www.example.com:443 | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256 -binary | openssl enc -base64`
 
 Check certificate chain:
 
