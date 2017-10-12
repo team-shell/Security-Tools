@@ -8,7 +8,7 @@ In the snippet below from a command line, the openssl tool's s_client command lo
 * `openssl s_client -connect wikipedia.org:443 | openssl x509 -noout -subject -issuer`
 
 Get the public key of the certificate from a host:
-* `openssl s_client -connect https://google.com:443 | openssl x509 -pubkey -noout`
+* `openssl s_client -connect google.com:443 | openssl x509 -pubkey -noout`
 
 You can get the SHA-256 pin for a public key by going to - https://www.ssllabs.com/ssltest/index.html
 
